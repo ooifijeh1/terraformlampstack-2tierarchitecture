@@ -224,7 +224,7 @@ resource "aws_lb_listener" "listener_lb" {
     target_group_arn = aws_lb_target_group.project-tg.arn
   }
 }
-# Create the EC2 Instances
+#Create the EC2 Instances
 resource "aws_instance" "web1" {
   ami                         = "ami-0093a6022697a73aa"
   instance_type               = "t2.micro"
