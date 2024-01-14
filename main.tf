@@ -271,7 +271,7 @@ resource "aws_db_subnet_group" "db-subnet" {
   subnet_ids = [aws_subnet.privatesub-1.id, aws_subnet.privatesub-2.id]
 }
 
-#Create the Data Base Instance
+# Create the Data Base Instance
 resource "aws_db_instance" "project-db" {
   allocated_storage      = 5
   engine                 = "mysql"
